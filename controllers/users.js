@@ -16,7 +16,7 @@ module.exports.create =
   async (req, res) => {
     const name = req.params.name;
     const user = await createUser(name, res);
-
+    if (!user) return;
     return res.send({ data: user.toJSON() });
   };
 module.exports.addConnection =
