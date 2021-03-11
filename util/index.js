@@ -37,6 +37,8 @@ const relationDict = {
   father: "child",
   child: "parent",
   son: "parent",
+  dad:"child",
+  mom:"child",
   daughter: "parent",
   "grand father": "grand child",
   "grand mother": "grand child",
